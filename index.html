@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superhero Search Game</title>
+  <!-- Import Tailwind CSS -->
+  <link href="https://unpkg.com/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Import DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/daisyui.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-500">
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-4xl font-bold mb-4">Superhero Search Game</h1>
+  <form id="search-form" class="mb-8">
+    <div class="flex items-center">
+      <input id="search-input" class="w-full py-2 px-4 rounded-lg border-gray-400 mr-4" type="text" placeholder="Enter superhero name" required>
+      <button id="search-button" class="btn btn-primary" type="submit">Search</button>
+    </div>
+  </form>
+  <div id="hero-stats" class="hidden">
+    <div class="flex items-center mb-4">
+      <img id="hero-image" class="w-32 h-32 rounded-full mr-4" src="">
+      <h2 id="hero-name" class="text-2xl font-bold"></h2>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="p-4 bg-white rounded-lg shadow-md">
+        <h3 class="text-lg font-bold mb-2">Intelligence</h3>
+        <p id="intelligence" class="text-gray-700"></p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow-md">
+        <h3 class="text-lg font-bold mb-2">Strength</h3>
+        <p id="strength" class="text-gray-700"></p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow-md">
+        <h3 class="text-lg font-bold mb-2">Speed</h3>
+        <p id="speed" class="text-gray-700"></p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow-md">
+        <h3 class="text-lg font-bold mb-2">Durability</h3>
+        <p id="durability" class="text-gray-700"></p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow-md">
+        <h3 class="text-lg font-bold mb-2">Power</h3>
+        <p id="power" class="text-gray-700"></p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow-md">
+        <h3 class="text-lg font-bold mb-2">Combat</h3>
+        <p id="combat" class="text-gray-700"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Import JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>
